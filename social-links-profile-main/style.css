@@ -1,0 +1,86 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--grey-900);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 375px;
+  padding: 32px;
+  border-radius: 12px;
+  background-color: var(--grey-800);
+  gap: 24px;
+  align-self: center;
+}
+
+.container .profile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.profile img {
+  width: 100px;
+  border-radius: 50%;
+}
+.profile .name {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.profile .name p {
+  color: var(--green);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.container .social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-buttons a.button {
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--grey-700);
+  border-radius: 8px;
+  color: var(--white);
+  font-weight: 600;
+  transition: 150ms;
+}
+
+.social-buttons a.button:hover {
+  background-color: var(--green);
+  color: var(--grey-900);
+  cursor: pointer;
+}
