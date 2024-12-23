@@ -9,6 +9,7 @@ The purpose of this repository is to showcase my frontend development skills to 
 ## Projects
 
 - **Project 1**: QR Code Component.
+- **Project 2**: Blog Preview Card Component.
 
 Feel free to explore the projects and see the code behind each one. I am open to feedback and collaboration opportunities.
 
