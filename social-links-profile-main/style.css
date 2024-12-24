@@ -29,6 +29,7 @@ body {
   width: 100%;
   max-width: 375px;
   padding: 32px;
+  margin: 0 16px;
   border-radius: 12px;
   background-color: var(--grey-800);
   gap: 24px;
