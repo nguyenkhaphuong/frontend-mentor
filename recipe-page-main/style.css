@@ -1,0 +1,133 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-50: hsl(330, 100%, 98%);
+  --rose-800: hsl(332, 51%, 32%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-family: 'Young Serif';
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--stone-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+  padding: 40px;
+  gap: 36px;
+  background-color: var(--white);
+  border-radius: 24px;
+}
+
+.container img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.container :where(.title, .nutrition) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container .title h1 {
+  font-size: 40px;
+}
+
+.container :where(.ingredients, .instructions, .nutrition) h2 {
+  font-size: 32px;
+  color: var(--brown-800);
+}
+
+.container .preparation {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--rose-50);
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.container .preparation h3 {
+  font-size: 20px;
+  color: var(--rose-800);
+}
+
+ul li,
+ol li {
+  margin: 12px 24px 0;
+}
+
+.container .preparation ul li span,
+.container .instructions ol li span {
+  font-weight: 700;
+}
+
+.container .nutrition .nutrition-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16rem 12px 32px;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.container .nutrition .nutrition-item span {
+  color: var(--brown-800);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    gap: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  .container img {
+    border-radius: 0;
+  }
+
+  .container .title,
+  .container .nutrition,
+  .container .instructions {
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .container .title h1 {
+    font-size: 32px;
+  }
+
+  .container .ingredients {
+    padding: 24px;
+  }
+
+  .container .preparation,
+  hr {
+    margin: 0 24px;
+  }
+
+  .container .nutrition .nutrition-item {
+    padding: 12px 6rem 12px 32px;
+  }
+}
